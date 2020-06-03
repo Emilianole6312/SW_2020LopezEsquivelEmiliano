@@ -1,0 +1,6 @@
+^\[\+672 [0-9]{10}\] (Skipper|Kowalski|Cabo|Rico)$
+Los numeros de los pingüinos de Madagascar.
+[+672 7473935113] Rico
+[+672 5345009331] Skipper
+[+672 8766764155] Kowalski
+[+672 5085533408] Cabo

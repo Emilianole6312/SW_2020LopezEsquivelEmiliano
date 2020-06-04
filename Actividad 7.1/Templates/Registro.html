@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Statics/css/Registro.css">
+    <title> Registro profesor </title>
+</head>
+<body>
+  <div>
+    <form action="../Dynamics/Registrar.php" method="POST">
+        <fieldset>
+            <legend><h1>Registro de Usuario (profesor)</h1></legend>
+            <p> Nombre: </p>
+            <input type="text" autocomplete="off" placeholder=" &#128100; Nombre" name="nombre" pattern='^[A-ZÁÉÍÓÚÜÑ][a-záéíóüúñ]+($|\s?[A-ZÁÉÍÓÚÜÑ]+[a-záéíóüúñ]+$)' title='Introduce un nombre valido' required>
+            <p> Apellido Paterno: </p>
+            <input type="text" autocomplete="off" placeholder=" &#128100; Apellido Paterno" name="paterno" pattern="^([A-ZÁÉÍÓÚÜÑ][a-záéíóüúñ]+|[a-záéíóüúñ]+\s[a-záéíóüúñ]+\s[A-ZÁÉÍÓÚÜÑ][a-záéíóüúñ]+|[a-záéíóüúñ]+\s[A-ZÁÉÍÓÚÜÑ][a-záéíóüúñ]+)$" title="Introduce un apellido valido">
+            <p> Apellido Materno: </p>
+            <input type="text" autocomplete="off" placeholder=" &#128100; Apellido Materno" name="materno" pattern="^([A-ZÁÉÍÓÚÜÑ][a-záéíóüúñ]+|[a-záéíóüúñ]+\s[a-záéíóüúñ]+\s[A-ZÁÉÍÓÚÜÑ][a-záéíóüúñ]+|[a-záéíóüúñ]+\s[A-ZÁÉÍÓÚÜÑ][a-záéíóüúñ]+)$" title="Introduce un apellido valido">
+            <p> Fecha de Nacimiento: </p>
+            <input type="date" name="nacimiento" required>
+            <p>Colegio:</p>
+            <select name="colegio" id="">
+                <optgroup label="Area I">
+                    <option value="Física"> Física </option>
+                    <option value="Informática"> Informática </option>
+                    <option value="Matemáticas"> Matemáticas </option>
+                </optgroup>
+                <optgroup label="Area II">
+                    <option value="Biología"> Biología </option>
+                    <option value="Educación Física"> Educación Física </option>
+                    <option value="Morfología, Fisiología y Salud"> Morfología, Fisiología y Salud </option>
+                    <option value="Orientación Educativa"> Orientación Educativa </option>
+                    <option value="Psicología e Higiene Mental"> Psicología e Higiene Mental </option>
+                    <option value="Química"> Química </option>
+                </optgroup>
+                <optgroup label="Area III">
+                    <option value="Ciencias Sociales"> Ciencias Sociales </option>
+                    <option value="Geografía"> Geografía </option>
+                    <option value="Historia"> Historia </option>
+                </optgroup>
+                <optgroup label="Area IV">
+                  <option value="Alemán"> Alemán </option>
+                  <option value="Artes Plásticas"> Artes Plásticas </option>
+                  <option value="Danza"> Danza </option>
+                  <option value="Dibujo y Modelado"> Dibujo y Modelado </option>
+                  <option value="Filosofía"> Filosofía </option>
+                  <option value="Francés"> Francés </option>
+                  <option value="Inglés"> Inglés </option>
+                  <option value="Italiano"> Italiano </option>
+                  <option value="Letras Clásicas"> Letras Clásicas </option>
+                  <option value="Literatura"> Literatura </option>
+                  <option value="Música"> Música </option>
+                  <option value="Teatro"> Teatro </option>
+                </optgroup>
+                <option value="Estudios Técnicos Especializados"> Estudios Técnicos Especializados </option>
+            </select>
+            <p>RFC:</p>
+            <input type="text" autocomplete="off" name="RFC" placeholder=' &#128100; RFC' pattern='^[A-ZÑ&]{4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|[1-2][0-9]|3[0-1])[A-Z0-9_]{3}$' title='Tiene que cumplir con las caracteristicas de un RFC' required>
+            <p>Contraseña:</p>
+            <input type="password" name="password" autocomplete="off" placeholder=' &#128272; Contraseña' title='La contraseña debe de contener más de 8 carácteres, al menos una mayuscula, una minúscula, un número y un carácter especial' pattern='^(?=\P{Ll}*\p{Ll})(?=\P{Lu}*\p{Lu})(?=\P{N}*\p{N})(?=[\p{L}\p{N}]*[^\p{L}\p{N}])[\s\S]{8,}$' required>
+            <br>
+            <br>
+            <input type="submit" value=" REGISTRARME ">
+        </fieldset>
+    </form>
+  </div>
+</body>
+</html>

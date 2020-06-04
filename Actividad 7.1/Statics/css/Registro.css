@@ -1,0 +1,30 @@
+body{
+    background-image: url(../img/wallpaper1.jpg);
+}
+
+div{
+    margin: auto;
+    width: 40%;
+}
+
+fieldset{
+    border-radius: 20%;
+    background: orange;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+p{
+    color: black;
+}
+
+input,select{
+    background: rgb(255, 222, 160);
+    border-radius: 20px;
+    border: none;
+    font-size: 17px;
+    text-align: center;
+    outline: none;
+    padding: 5px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Statics/css/Inicio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Simétrico</title>
+</head>
+<body>
+    <form action="../Dynamics/cifrar.php" method="POST">
+        <div class="fieldset">
+          <fieldset>
+            <legend>
+              <h1>Cifrar</h1>
+            </legend>
+            <p>Por favor introduzca el texto que desea Cifrar</p>
+            <textarea name="texto" id="" cols="70" rows="10"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="CIFRAR">
+          </fieldset>
+        </div>
+    </form>
+    <form action="../Dynamics/descifrar.php" method="POST">
+        <div class="fieldset">
+          <fieldset>
+            <legend>
+              <h1>Descifrar mensaje</h1>
+            </legend>
+            <p>Introduce tu mensaje cifrado aquí.</p>
+            <textarea name="texto" id="" cols="70" rows="10"></textarea>
+            <p>Introduce tu llave aquí:;</p>
+            <input type="text" name="key" placeholder="Introduce tu llave aquí.">
+            <br>
+            <input type="submit" value="Descifrar">
+          </fieldset>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    background-image: url(../img/wallpaper.png);
+}
+
+textarea{
+    border-radius: 20px;
+    outline: none;
+    resize: none;
+    text-align: center;
+}
+
+fieldset{
+    border-radius: 20px;
+    background: lightblue;
+}
+
+form{
+    width: 50%;
+    margin: auto;
+}
